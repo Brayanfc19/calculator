@@ -1,0 +1,79 @@
+*{
+	font-family: Rubik,sans-serif;
+	border: none;
+    margin: 0;
+	outline: none;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+.circle{
+	content: "";
+	background: linear-gradient(90deg,rgb(59, 59, 59),rgb(29, 29, 29));
+	height: 100%; width: 100%;
+	clip-path: circle(32% at 50% 50%);
+	position: absolute;
+}
+.container{
+
+	background:linear-gradient(90deg,rgb(41, 41, 41),rgb(41, 41, 41));
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.content{
+	color:#d6d6d6 ;
+	text-align: center;
+	padding: 10px;
+	position: relative;
+}
+.box{
+    background: linear-gradient(145deg, #ffffff, #cfcfcf);
+	width: fit-content;
+	padding: 20px;
+	display: grid;
+	grid-gap: 20px;
+	position: relative;
+	border-radius: 5px;
+}
+.box #text{
+    background: linear-gradient(145deg, rgb(207, 207, 207), rgb(168, 168, 168));
+    box-shadow: 6px 6px 20px -1px rgba(82, 81, 81, 0.333),-6px -6px 20px -1px #0002;
+	text-align: right;
+	font-size: 40px;
+	padding: 0 10px;
+	border-bottom: 1px solid rgba(151, 151, 151, 0.719);
+	border-right: 1px solid rgba(155, 155, 155, 0.623);
+	line-height: 1.5;
+	width: 300px;
+}
+
+#buttons{
+	display: grid;
+	grid-template-columns: repeat(4, 70px);
+	grid-gap: 5px;
+	justify-content: center;
+}
+#buttons input{
+    background-color: #242424;
+	font-size: 23px;
+	border-top: 1px solid #fff4;
+	border-left: 1px solid #fff4;
+	color: #fff;
+	height: 3em;
+	width: 3.1em;
+}
+#buttons .active{
+    background: linear-gradient(145deg,#1278d8, #01409e );
+}
+#buttons input:active{
+    background-color:#2c2c2c;
+    transform: scale(0.9);
+    transition: 0.2s;
+    box-shadow: 2px 2px 10px 0px #0025,0px 0px 5px 0px rgba(22, 22, 22, 0.87);
+}
+#buttons .active:active{
+    background: linear-gradient(145deg,#3b80e7, #6789e7 );
+}

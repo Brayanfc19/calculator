@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="circle"></div>
+		<div class="content">
+			<h1 class="title">CALCULATOR</h1>
+			<span>For every body</span>
+		</div>
+		<div class="container-calc">
+			<form class="box" name="box" autocomplete="off">
+				<input id="text" name="text">
+				<div id="buttons">
+					<input type="button" value="9" onclick="document.box.text.value += '9'">
+					<input type="button" value="8" onclick="document.box.text.value += '8'">
+					<input type="button" value="7" onclick="document.box.text.value += '7'">
+					<input type="button" value="+" onclick="document.box.text.value += '+'">
+		
+					<input type="button" value="6" onclick="document.box.text.value += '6'">
+					<input type="button" value="5" onclick="document.box.text.value += '5'">
+					<input type="button" value="4" onclick="document.box.text.value += '4'">
+					<input type="button" value="-" onclick="document.box.text.value += '-'">
+		
+					<input type="button" value="3" onclick="document.box.text.value += '3'">
+					<input type="button" value="2" onclick="document.box.text.value += '2'">
+					<input type="button" value="1" onclick="document.box.text.value += '1'">
+					<input type="button" value="x" onclick="document.box.text.value += '*'">
+		
+					<input type="reset" value="C" class="active">
+					<input type="button" value="0" onclick="document.box.text.value += '0'">
+					<input type="button" value="=" onclick="document.box.text.value = eval(document.box.text.value)">
+					<input type="button" value="/" onclick="document.box.text.value += '/'">
+				</div>
+		</div>
+		</form>
+	</div>
+</body>
+</html>
